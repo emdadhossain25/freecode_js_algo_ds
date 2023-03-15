@@ -29,6 +29,8 @@ var Stack = function () {
     }
     return this.storage[this.count - 1];
   };
+
+  // returns the size of stack
   this.size = function () {
     return this.count;
   };
@@ -42,3 +44,4 @@ console.log(myStack.peek());
 myStack.push("free code camp");
 console.log(myStack.pop());
 console.log(myStack.peek());
+console.log(myStack.size());
