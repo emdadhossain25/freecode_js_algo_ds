@@ -4,19 +4,18 @@
 Stack is a Data Structure 
 
 ```javascript
-import foobar
-# Stack function (LIFO)
+//  Stack function (LIFO)
 var Stack = function () {
   this.storage = {};
   this.count = 0;
 
-# push function
+//  push function
   this.push = function (x) {
     this.storage[this.count] = x;
     this.count++;
   };
 
-# pop function (deletes the last inserted item)
+//  pop function (deletes the last inserted item)
   this.pop = function () {
     if (this.count === 0) {
       return undefined;
