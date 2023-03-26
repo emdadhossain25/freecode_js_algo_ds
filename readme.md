@@ -1,4 +1,4 @@
-                        # Data Structures And Algorithm 
+# Data Structures And Algorithm 
 
 ## Stack
 Stack is a Data Structure 
