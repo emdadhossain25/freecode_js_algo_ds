@@ -26,7 +26,7 @@ var Stack = function () {
     return result;
   };
 
-# peek function to display the last inserted item
+// peek function to display the last inserted item
   this.peek = function () {
     if (this.count === 0) {
       return undefined;
@@ -34,13 +34,13 @@ var Stack = function () {
     return this.storage[this.count - 1];
   };
 
-  # size function to get the size of stack
+  // size function to get the size of stack
   this.size = function () {
     return this.count;
   };
 };
 
-# calling stack function and loging
+// calling stack function and loging
 let myStack = new Stack();
 myStack.push(2);
 myStack.push(3);
