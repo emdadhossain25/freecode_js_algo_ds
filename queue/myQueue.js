@@ -26,6 +26,10 @@ class Queue {
     this.size = function () {
       return collection.length;
     };
+
+    this.isEmpty = function () {
+      return collection.length === 0;
+    };
   }
 }
 
@@ -37,4 +41,6 @@ queue.enque("2");
 queue.enque("3");
 console.log(queue.deque());
 console.log(queue.front());
+console.log(queue.isEmpty());
 console.log(queue.deque());
+console.log(queue.isEmpty());
