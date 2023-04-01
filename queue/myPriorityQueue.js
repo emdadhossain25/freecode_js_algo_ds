@@ -1,5 +1,5 @@
 // priority queue is a queue with index priority
-// the element with highest priority index will be push in front/first
+// the element with highest priority index will be push in down
 class PriorityQueue {
   constructor() {
     let collection = [];
