@@ -1,7 +1,8 @@
-# Data Structures And Algorithm 
+# Data Structures And Algorithm
 
 ## Stack
-Stack is a Data Structure 
+
+Stack is a Data Structure
 
 ```javascript
 //  Stack function (LIFO)
@@ -9,13 +10,13 @@ var Stack = function () {
   this.storage = {};
   this.count = 0;
 
-//  push function
+  //  push function
   this.push = function (x) {
     this.storage[this.count] = x;
     this.count++;
   };
 
-//  pop function (deletes the last inserted item)
+  //  pop function (deletes the last inserted item)
   this.pop = function () {
     if (this.count === 0) {
       return undefined;
@@ -26,7 +27,7 @@ var Stack = function () {
     return result;
   };
 
-// peek function to display the last inserted item
+  // peek function to display the last inserted item
   this.peek = function () {
     if (this.count === 0) {
       return undefined;
@@ -46,9 +47,10 @@ myStack.push(2);
 myStack.push(3);
 console.log(myStack.pop());
 console.log(myStack.peek());
-
 ```
+
 ## Set
+
 Set is a data structure, where no duplicate element
 
 ```javascript
@@ -158,5 +160,53 @@ console.log(setA.union(setB).values());
 console.log(setB.intersection(setA).values());
 console.log(setB.difference(setA).values());
 console.log(setA.subset(setB));
+```
+
+## Queue
+
+// is a data structure to hold data . FIFO (First In First Out)
+
+```javascript
+class Queue {
+  constructor() {
+    var collection = [];
+    // print(prints the statement)
+    this.print = function (e) {
+      console.log(e);
+    };
+
+    // enqueue(push at end of the array)
+    this.enque = function (e) {
+      collection.push(e);
+    };
+
+    // deque (return and delete first item)
+    this.deque = function () {
+      return collection.shift();
+    };
+
+    // front (returns the first item of the array)
+    this.front = function () {
+      return collection[0];
+    };
+    // size (returns size of the array)
+    this.size = function () {
+      return collection.length;
+    };
+  }
+}
+
+// driver code to run the method
+var queue = new Queue();
+console.log(queue.size());
+queue.print("d");
+queue.enque("2");
+queue.enque("3");
+console.log(queue.deque());
+console.log(queue.front());
+console.log(queue.deque());
+```
+
+```
 
 ```
